@@ -51,10 +51,10 @@ public class ScriptController : MonoBehaviour {
 		notes.Add(new ScriptNote(18, NoteType.DOWN));
 		notes.Add(new ScriptNote(20, NoteType.UP));
 		notes.Add(new ScriptNote(22, NoteType.DOWN));
-		notes.Add(new ScriptNote(24, NoteType.LEFT));
-		notes.Add(new ScriptNote(25, NoteType.RIGHT));
-		notes.Add(new ScriptNote(26, NoteType.LEFT));
-		notes.Add(new ScriptNote(27, NoteType.RIGHT));
+		notes.Add(new ScriptNote(24, NoteType.TAP));
+		notes.Add(new ScriptNote(25, NoteType.TAP));
+		notes.Add(new ScriptNote(26, NoteType.TAP));
+		notes.Add(new ScriptNote(27, NoteType.TAP));
 
 		GetComponent<AudioSource>().PlayDelayed(-GameObject.Find("GameController").GetComponent<GameController>().gameTime());
 	}
