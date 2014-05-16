@@ -113,6 +113,7 @@ public class ScriptController : MonoBehaviour {
 			result.Add(1);
 			result.Add(2);
 			result.Add(3);
+			break;
 		}
 		return result;
 	}
