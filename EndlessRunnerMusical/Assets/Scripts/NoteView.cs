@@ -16,12 +16,17 @@ public class NoteView : MonoBehaviour {
 	public GameObject tap_idle;
 	public GameObject tap_death;
 
+	private bool died;
+	private Vector3 deathLocation;
+	private float deathTime;
+
 	public void initWithScoreNote(ScoreNote note) {
 		scoreNote = note;
 	}
 
 	// Use this for initialization
 	void Start () {
+		died = false;
 		Update();
 	}
 
@@ -42,17 +47,24 @@ public class NoteView : MonoBehaviour {
 		if (scoreNote == null) {
 			return;
 		}
-		move();
 		checkStatus();
+		move();
 		checkDestroy();
 	}
 	
 	void move() {
 		float x = calcX();
-		if (scoreNote.result == ScoreNoteResult.FAIL) {
+		if (scoreNote.result == ScoreNoteResult.INCOMPLETE) {
+			transform.position = new Vector3(x, 0.0f, 0.0f);
 		} else if (scoreNote.result == ScoreNoteResult.PASS) {
+//			float delta = Time.time - deathTime;
+//			float rotateSpeed = -(Random.value * 500 + 100);
+//			if (scoreNote.scriptNote.type == NoteType.LEFT ||
+//			    scoreNote.scriptNote.type == NoteType.UP) {
+//				rotateSpeed *= -1;
+//			}
+//			transform.rotation = Quaternion.AngleAxis(rotateSpeed * delta, Vector3.forward);
 		}
-		transform.position = new Vector3(x, 0.0f, 0.0f);
 	}
 
 	void checkStatus() {
@@ -98,6 +110,22 @@ public class NoteView : MonoBehaviour {
 	void checkDestroy() {
 		if (calcX() < -GameObject.Find("NoteController").GetComponent<NoteController>().spawnDistance()) {
 			Destroy(gameObject);
+		}
+	}
+
+	void FixedUpdate() {
+		if (scoreNote.result == ScoreNoteResult.PASS && !died) {
+			died = true;
+			rigidbody2D.isKinematic = false;
+			
+			float x = Random.value * 1 + 1;
+			float y = Random.value * 1 + 1;
+			if (scoreNote.scriptNote.type == NoteType.UP ||
+			    scoreNote.scriptNote.type == NoteType.LEFT) {
+				x *= -1;
+			}
+			rigidbody2D.AddForce(new Vector2(x * 500, y * 500));
+			rigidbody2D.AddTorque(-x * 5000);
 		}
 	}
 }
