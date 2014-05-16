@@ -105,6 +105,7 @@ public class PlayerController : MonoBehaviour {
 
 		updateHearts();
 		GetComponent<PlayerBehaviorScript>().HandleHurt();
+		GameObject.Find("Red").GetComponent<RedView>().Flash();
 	}
 	
 	public void updateScore(int delta) {
