@@ -44,12 +44,12 @@ TextureImporter:
     - name: char_hurt_0
       rect:
         serializedVersion: 2
-        x: 202
-        y: 3644
-        width: 445
-        height: 307
+        x: 139
+        y: 3599
+        width: 508
+        height: 352
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_hurt_1
       rect:
         serializedVersion: 2
@@ -58,7 +58,7 @@ TextureImporter:
         width: 282
         height: 315
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_hurt_2
       rect:
         serializedVersion: 2
@@ -67,7 +67,7 @@ TextureImporter:
         width: 467
         height: 396
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_hurt_3
       rect:
         serializedVersion: 2
@@ -76,7 +76,7 @@ TextureImporter:
         width: 537
         height: 455
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_hurt_4
       rect:
         serializedVersion: 2
@@ -85,7 +85,7 @@ TextureImporter:
         width: 607
         height: 515
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_hurt_5
       rect:
         serializedVersion: 2
@@ -94,42 +94,42 @@ TextureImporter:
         width: 364
         height: 348
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_hurt_6
       rect:
         serializedVersion: 2
-        x: 213
+        x: 167
         y: 1718
-        width: 404
+        width: 450
         height: 287
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_hurt_7
       rect:
         serializedVersion: 2
-        x: 928
-        y: 1746
-        width: 449
-        height: 332
+        x: 883
+        y: 1658
+        width: 494
+        height: 420
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_hurt_8
       rect:
         serializedVersion: 2
-        x: 201
-        y: 1113
-        width: 449
-        height: 320
+        x: 144
+        y: 1037
+        width: 506
+        height: 396
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_hurt_9
       rect:
         serializedVersion: 2
-        x: 928
-        y: 1112
-        width: 445
-        height: 307
+        x: 879
+        y: 1062
+        width: 494
+        height: 357
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 

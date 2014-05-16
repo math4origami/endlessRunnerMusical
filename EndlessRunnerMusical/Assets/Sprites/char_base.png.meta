@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 86a2f2ac3f7b34fb08a91c79e46c8195
+guid: 9acb1231b08de4edc8f1a40595deb688
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -41,95 +41,86 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: char_swipe_right_0
+    - name: char_base_0
       rect:
         serializedVersion: 2
-        x: 134
-        y: 3636
+        x: 14
+        y: 1643
         width: 504
-        height: 405
+        height: 403
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: char_swipe_right_1
+      pivot: {x: 0, y: 0}
+    - name: char_base_1
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 3582
-        width: 390
-        height: 512
+        x: 529
+        y: 1647
+        width: 507
+        height: 395
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: char_swipe_right_2
+      pivot: {x: 0, y: 0}
+    - name: char_base_2
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3111
-        width: 685
-        height: 418
+        x: 1043
+        y: 1651
+        width: 510
+        height: 387
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: char_swipe_right_3
+      pivot: {x: 0, y: 0}
+    - name: char_base_3
       rect:
         serializedVersion: 2
-        x: 1066
-        y: 3099
-        width: 646
-        height: 439
+        x: 4
+        y: 1249
+        width: 513
+        height: 379
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: char_swipe_right_4
+      pivot: {x: 0, y: 0}
+    - name: char_base_4
       rect:
         serializedVersion: 2
-        x: 131
-        y: 2572
-        width: 724
-        height: 460
+        x: 518
+        y: 1253
+        width: 517
+        height: 371
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: char_swipe_right_5
+      pivot: {x: 0, y: 0}
+    - name: char_base_5
       rect:
         serializedVersion: 2
-        x: 1236
-        y: 2684
-        width: 363
-        height: 231
+        x: 1040
+        y: 1249
+        width: 513
+        height: 379
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: char_swipe_right_6
+      pivot: {x: 0, y: 0}
+    - name: char_base_6
       rect:
         serializedVersion: 2
-        x: 231
-        y: 2149
-        width: 358
-        height: 296
+        x: 7
+        y: 839
+        width: 510
+        height: 387
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: char_swipe_right_7
+      pivot: {x: 0, y: 0}
+    - name: char_base_7
       rect:
         serializedVersion: 2
-        x: 1115
-        y: 2139
-        width: 466
-        height: 352
+        x: 529
+        y: 835
+        width: 507
+        height: 395
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: char_swipe_right_8
+      pivot: {x: 0, y: 0}
+    - name: char_base_8
       rect:
         serializedVersion: 2
-        x: 149
-        y: 1581
-        width: 480
-        height: 386
-      alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: char_swipe_right_9
-      rect:
-        serializedVersion: 2
-        x: 1097
-        y: 1580
+        x: 1050
+        y: 831
         width: 504
-        height: 405
+        height: 403
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 

@@ -40,16 +40,18 @@ public class ScriptController : MonoBehaviour {
 
 	void Start() {
 		notes = new List<ScriptNote>();
-		notes.Add(new ScriptNote(2, NoteType.UP));
-		notes.Add(new ScriptNote(4, NoteType.DOWN));
-		notes.Add(new ScriptNote(6, NoteType.LEFT));
-		notes.Add(new ScriptNote(8, NoteType.RIGHT));
-		notes.Add(new ScriptNote(10, NoteType.UP));
-		notes.Add(new ScriptNote(12, NoteType.DOWN));
-		notes.Add(new ScriptNote(14, NoteType.LEFT));
+		notes.Add(new ScriptNote(4, NoteType.UP));
+		notes.Add(new ScriptNote(8, NoteType.DOWN));
+		notes.Add(new ScriptNote(12, NoteType.LEFT));
 		notes.Add(new ScriptNote(16, NoteType.RIGHT));
-		notes.Add(new ScriptNote(18, NoteType.TAP));
-		notes.Add(new ScriptNote(20, NoteType.TAP));
+		notes.Add(new ScriptNote(20, NoteType.UP));
+		notes.Add(new ScriptNote(24, NoteType.DOWN));
+		notes.Add(new ScriptNote(28, NoteType.LEFT));
+		notes.Add(new ScriptNote(32, NoteType.RIGHT));
+		notes.Add(new ScriptNote(36, NoteType.TAP));
+		notes.Add(new ScriptNote(38, NoteType.TAP));
+		notes.Add(new ScriptNote(40, NoteType.TAP));
+		notes.Add(new ScriptNote(42, NoteType.TAP));
 
 		GameObject.Find("Score").GetComponent<ScoreController>().initScoreWithScript(notes);
 	}

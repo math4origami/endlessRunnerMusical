@@ -49,79 +49,79 @@ TextureImporter:
         width: 504
         height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_swipe_left_1
       rect:
         serializedVersion: 2
-        x: 870
+        x: 840
         y: 3545
-        width: 662
+        width: 692
         height: 423
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_swipe_left_2
       rect:
         serializedVersion: 2
-        x: 35
+        x: 0
         y: 2851
-        width: 728
+        width: 763
         height: 440
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_swipe_left_3
       rect:
         serializedVersion: 2
-        x: 828
+        x: 770
         y: 2825
-        width: 708
+        width: 766
         height: 471
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_swipe_left_4
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 2087
-        width: 744
+        width: 767
         height: 529
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_swipe_left_5
       rect:
         serializedVersion: 2
-        x: 784
+        x: 774
         y: 2047
-        width: 754
+        width: 764
         height: 612
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_swipe_left_6
       rect:
         serializedVersion: 2
-        x: 38
+        x: 0
         y: 1477
-        width: 432
+        width: 470
         height: 354
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_swipe_left_7
       rect:
         serializedVersion: 2
-        x: 851
+        x: 794
         y: 1454
-        width: 421
+        width: 478
         height: 402
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_swipe_left_8
       rect:
         serializedVersion: 2
-        x: 86
+        x: 38
         y: 757
-        width: 446
+        width: 494
         height: 403
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_swipe_left_9
       rect:
         serializedVersion: 2
@@ -130,6 +130,6 @@ TextureImporter:
         width: 504
         height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 

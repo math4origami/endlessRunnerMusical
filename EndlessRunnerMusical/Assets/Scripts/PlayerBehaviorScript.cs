@@ -21,6 +21,8 @@ public class PlayerBehaviorScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		ClearAnimations();
+
 		if (Input.touchCount == 1) {
 			processTouch();
 			if (!wasTouched) {
@@ -94,8 +96,6 @@ public class PlayerBehaviorScript : MonoBehaviour {
 	}
 
 	void swipeTypeLogic () {
-		GameController gc = GameObject.Find("GameController").GetComponent<GameController>();
-
 		//Runs when a swipe has ended
 		float xDifference = swipeEnd.x - swipeStart.x;
 		float yDifference = swipeEnd.y - swipeStart.y;
@@ -103,10 +103,10 @@ public class PlayerBehaviorScript : MonoBehaviour {
 		if (Mathf.Abs(xDifference) >= swipeDirectionThreshold && !swipeXRegistered) {
 			//Difference > 0 = left swipe, Difference < 0 = right swipe
 			if (xDifference < 0) {
-				gc.HandleInput(NoteType.LEFT);
+				HandleInput(NoteType.LEFT);
 			}
 			else if (xDifference > 0) {
-				gc.HandleInput(NoteType.RIGHT);
+				HandleInput(NoteType.RIGHT);
 			}
 			swipeXRegistered = true;
 		}
@@ -114,10 +114,10 @@ public class PlayerBehaviorScript : MonoBehaviour {
 		if (Mathf.Abs(yDifference) >= swipeDirectionThreshold && !swipeYRegistered) {
 			//Difference > 0 = up swipe, Difference < 0 = down swipe
 			if (yDifference < 0) {
-				gc.HandleInput(NoteType.DOWN);
+				HandleInput(NoteType.DOWN);
 			}
 			else if (yDifference > 0) {
-				gc.HandleInput(NoteType.UP);
+				HandleInput(NoteType.UP);
 			}
 			swipeYRegistered = true;
 		}
@@ -125,6 +125,36 @@ public class PlayerBehaviorScript : MonoBehaviour {
 
 	void TapFunction() {
 		//Respond to tap event
-		GameObject.Find("GameController").GetComponent<GameController>().HandleInput(NoteType.TAP);
+		HandleInput(NoteType.TAP);
+	}
+
+	void ClearAnimations() {
+		GetComponentInChildren<Animator>().SetBool("swipeDown", false);
+		GetComponentInChildren<Animator>().SetBool("swipeUp", false);
+		GetComponentInChildren<Animator>().SetBool("swipeLeft", false);
+		GetComponentInChildren<Animator>().SetBool("swipeRight", false);
+		GetComponentInChildren<Animator>().SetBool("attackTap", false);
+	}
+
+	void HandleInput(NoteType direction) {
+		GameObject.Find("GameController").GetComponent<GameController>().HandleInput(direction);
+
+		switch (direction) {
+		case NoteType.DOWN:
+			GetComponentInChildren<Animator>().SetBool("swipeDown", true);
+			break;
+		case NoteType.UP:
+			GetComponentInChildren<Animator>().SetBool("swipeUp", true);
+			break;
+		case NoteType.RIGHT:
+			GetComponentInChildren<Animator>().SetBool("swipeRight", true);
+			break;
+		case NoteType.LEFT:
+			GetComponentInChildren<Animator>().SetBool("swipeLeft", true);
+			break;
+		case NoteType.TAP:
+			GetComponentInChildren<Animator>().SetBool("attackTap", true);
+			break;
+		}
 	}
 }

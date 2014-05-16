@@ -45,11 +45,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 202
-        y: 3642
+        y: 3572
         width: 448
-        height: 312
+        height: 382
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_attack_tap_1
       rect:
         serializedVersion: 2
@@ -58,34 +58,34 @@ TextureImporter:
         width: 288
         height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_attack_tap_2
       rect:
         serializedVersion: 2
         x: 1490
         y: 3574
-        width: 376
+        width: 399
         height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_attack_tap_3
       rect:
         serializedVersion: 2
         x: 154
         y: 2962
-        width: 408
+        width: 461
         height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_attack_tap_4
       rect:
         serializedVersion: 2
         x: 822
         y: 2966
-        width: 400
+        width: 436
         height: 352
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_attack_tap_5
       rect:
         serializedVersion: 2
@@ -94,7 +94,7 @@ TextureImporter:
         width: 376
         height: 392
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_attack_tap_6
       rect:
         serializedVersion: 2
@@ -103,33 +103,33 @@ TextureImporter:
         width: 452
         height: 456
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_attack_tap_7
       rect:
         serializedVersion: 2
-        x: 854
-        y: 2426
-        width: 452
-        height: 336
+        x: 801
+        y: 2335
+        width: 505
+        height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_attack_tap_8
       rect:
         serializedVersion: 2
-        x: 1510
-        y: 2426
-        width: 452
-        height: 324
+        x: 1451
+        y: 2341
+        width: 511
+        height: 409
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: char_attack_tap_9
       rect:
         serializedVersion: 2
-        x: 202
-        y: 1814
-        width: 448
-        height: 312
+        x: 141
+        y: 1750
+        width: 509
+        height: 376
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 
