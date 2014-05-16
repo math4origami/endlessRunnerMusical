@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour {
 	void Update () {
 		GameObject.Find("Score").GetComponent<ScoreController>().getNote(gameTime());
 		GameObject.Find("SwipeDebug").guiText.text = gameTime().ToString();
+		GameObject.Find("SwipeDebug2").guiText.text = (gameTime() / ScriptController.SECONDS_PER_MINUTE * GameObject.Find("Script").GetComponent<ScriptController>().bpm).ToString();
 		if (!playerController.isAlive ()) {
 			loseLevel();
 		}

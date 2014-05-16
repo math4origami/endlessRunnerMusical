@@ -134,6 +134,7 @@ public class PlayerBehaviorScript : MonoBehaviour {
 		GetComponentInChildren<Animator>().SetBool("swipeLeft", false);
 		GetComponentInChildren<Animator>().SetBool("swipeRight", false);
 		GetComponentInChildren<Animator>().SetBool("attackTap", false);
+		GetComponentInChildren<Animator>().SetBool("hurt", false);
 	}
 
 	void HandleInput(NoteType direction) {
@@ -156,5 +157,9 @@ public class PlayerBehaviorScript : MonoBehaviour {
 			GetComponentInChildren<Animator>().SetBool("attackTap", true);
 			break;
 		}
+	}
+
+	public void HandleHurt() {
+		GetComponentInChildren<Animator>().SetBool("hurt", true);
 	}
 }
