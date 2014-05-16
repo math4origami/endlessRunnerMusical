@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: ee8ad83b93a6d42118e15ebbea714c4f
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: good_fx_0
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 3630
+        width: 341
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_1
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 3621
+        width: 359
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_2
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 3614
+        width: 374
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_3
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 3606
+        width: 390
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_4
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 3599
+        width: 404
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_5
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 3583
+        width: 435
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_6
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2983
+        width: 456
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_7
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 3062
+        width: 299
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_8
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 3064
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_9
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3066
+        width: 290
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_10
+      rect:
+        serializedVersion: 2
+        x: 2512
+        y: 3060
+        width: 301
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_11
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 3056
+        width: 311
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2462
+        width: 319
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_13
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 2459
+        width: 326
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_14
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 2461
+        width: 319
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: good_fx_15
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 2476
+        width: 289
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

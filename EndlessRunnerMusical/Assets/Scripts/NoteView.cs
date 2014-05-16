@@ -126,6 +126,13 @@ public class NoteView : MonoBehaviour {
 			}
 			rigidbody2D.AddForce(new Vector2(x * 500, y * 500));
 			rigidbody2D.AddTorque(-x * 5000);
+
+			makeExplode();
 		}
+	}
+
+	void makeExplode() {
+		GameObject fx = GameObject.Find("Good_FX");
+		fx.GetComponent<Animator>().SetTrigger("good_fx");
 	}
 }
