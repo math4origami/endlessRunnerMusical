@@ -4,9 +4,10 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 
 	public float startBuffer;
+	private PlayerController playerController;
 
 	void Start () {
-
+		playerController = (PlayerController)GameObject.Find ("Player").GetComponent (typeof(PlayerController));
 	}
 
 	public float gameTime() {
@@ -17,6 +18,9 @@ public class GameController : MonoBehaviour {
 	void Update () {
 		GameObject.Find("Score").GetComponent<ScoreController>().getNote(gameTime());
 		GameObject.Find("SwipeDebug").guiText.text = gameTime().ToString();
+		if (!playerController.isAlive ()) {
+			loseLevel();
+		}
 	}
 
 	public void HandleInput(NoteType direction) {

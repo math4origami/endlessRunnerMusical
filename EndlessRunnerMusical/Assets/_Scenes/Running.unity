@@ -74,6 +74,58 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1001 &207056371
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_Name
+      value: BGScroller2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 100000, guid: d2cc715f59f0c4008b1212e6af0fc1bb, type: 2}
+    - target: {fileID: 11400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: scrollSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+  m_RootGameObject: {fileID: 569964999}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &227499183
 Prefab:
   m_ObjectHideFlags: 0
@@ -234,6 +286,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swipeSpeedThreshold: 500
   swipeDirectionThreshold: 10
+--- !u!1 &569964999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+  m_PrefabInternal: {fileID: 207056371}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 569965001}
+  - 114: {fileID: 569965000}
+  m_Layer: 0
+  m_Name: BGScroller2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &569965000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d,
+    type: 2}
+  m_PrefabInternal: {fileID: 207056371}
+  m_GameObject: {fileID: 569964999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66621cd709a8415fab3dfca8d31b075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 100000, guid: d2cc715f59f0c4008b1212e6af0fc1bb, type: 2}
+  scrollSpeed: 5
+--- !u!4 &569965001
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+  m_PrefabInternal: {fileID: 207056371}
+  m_GameObject: {fileID: 569964999}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &634722803
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +498,58 @@ Prefab:
   m_RootGameObject: {fileID: 1529657679}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1001 &1493877496
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: m_Name
+      value: BGScroller1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 100000, guid: e4da09f7827334bf09c3cc718ff65997, type: 2}
+    - target: {fileID: 11400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+      propertyPath: scrollSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+  m_RootGameObject: {fileID: 1651934552}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1529657679
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +716,47 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1651934552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+  m_PrefabInternal: {fileID: 1493877496}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1651934554}
+  - 114: {fileID: 1651934553}
+  m_Layer: 0
+  m_Name: BGScroller1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1651934553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1493877496}
+  m_GameObject: {fileID: 1651934552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66621cd709a8415fab3dfca8d31b075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 100000, guid: e4da09f7827334bf09c3cc718ff65997, type: 2}
+  scrollSpeed: 10
+--- !u!4 &1651934554
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 3feefade9b7fc4c32a77af12cc07ba6d, type: 2}
+  m_PrefabInternal: {fileID: 1493877496}
+  m_GameObject: {fileID: 1651934552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1660384340
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   registerThreshold: .5
   passThreshold: .25
+  playerControllerObj: {fileID: 485661822}
 --- !u!4 &1759128308
 Transform:
   m_ObjectHideFlags: 0
