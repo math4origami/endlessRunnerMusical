@@ -4,7 +4,6 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 
 	public float startBuffer;
-	public float PIXELS_PER_SECOND;
 
 	void Start () {
 
