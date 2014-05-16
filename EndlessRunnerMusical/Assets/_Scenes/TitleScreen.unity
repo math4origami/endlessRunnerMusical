@@ -237,7 +237,7 @@ MonoBehaviour:
   buttonText: 
   objectName: TitleScreenController
   scriptFunction: startLevel
-  posX: 266
+  posX: 354
   posY: 445
   sizeX: 428
   sizeY: 182
@@ -474,7 +474,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posX
-      value: 266
+      value: 354
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posY
