@@ -104,6 +104,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		updateHearts();
+		GetComponent<PlayerBehaviorScript>().HandleHurt();
 	}
 	
 	public void updateScore(int delta) {
