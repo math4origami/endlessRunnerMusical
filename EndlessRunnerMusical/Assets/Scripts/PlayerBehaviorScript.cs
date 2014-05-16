@@ -142,24 +142,24 @@ public class PlayerBehaviorScript : MonoBehaviour {
 
 		switch (direction) {
 		case NoteType.DOWN:
-			GetComponentInChildren<Animator>().SetBool("swipeDown", true);
+			GetComponentInChildren<Animator>().SetTrigger("swipeDownT");
 			break;
 		case NoteType.UP:
-			GetComponentInChildren<Animator>().SetBool("swipeUp", true);
+			GetComponentInChildren<Animator>().SetTrigger("swipeUpT");
 			break;
 		case NoteType.RIGHT:
-			GetComponentInChildren<Animator>().SetBool("swipeRight", true);
+			GetComponentInChildren<Animator>().SetTrigger("swipeRightT");
 			break;
 		case NoteType.LEFT:
-			GetComponentInChildren<Animator>().SetBool("swipeLeft", true);
+			GetComponentInChildren<Animator>().SetTrigger("swipeLeftT");
 			break;
 		case NoteType.TAP:
-			GetComponentInChildren<Animator>().SetBool("attackTap", true);
+			GetComponentInChildren<Animator>().SetTrigger("attackTapT");
 			break;
 		}
 	}
 
 	public void HandleHurt() {
-		GetComponentInChildren<Animator>().SetBool("hurt", true);
+		GetComponentInChildren<Animator>().SetTrigger("hurtT");
 	}
 }
