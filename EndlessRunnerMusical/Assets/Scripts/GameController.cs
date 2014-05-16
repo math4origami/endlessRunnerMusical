@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
 	private float lastSwipe = -10.0f;
 
 	void Start () {
+
 	}
 
 	public float gameTime() {
@@ -22,5 +23,17 @@ public class GameController : MonoBehaviour {
 
 	public void HandleInput(NoteType direction) {
 		GameObject.Find("Score").GetComponent<ScoreController>().processNote(gameTime(), direction);
+	}
+
+	public void titleScreen() {
+		Application.LoadLevel("TitleScreen");
+	}
+
+	public void loseLevel() {
+		Application.LoadLevel("LoseLevel");
+	}
+
+	public void winLevel() {
+		Application.LoadLevel("WinLevel");
 	}
 }
