@@ -33,13 +33,18 @@ public class ScoreController : MonoBehaviour {
 		notes = new List<ScoreNote>();
 		foreach (ScriptNote scriptNote in scriptNotes) {
 			notes.Add(new ScoreNote(scriptNote));
+			Debug.Log(notes[notes.Count-1]);
 		}
 	}
 
-	public void processNote(float seconds) {
+	public void processNote(float seconds, NoteType direction) {
 		ScoreNote note = getNote(seconds);
 		if (note != null) {
-			if (note.scriptNote.interval(seconds) < passThreshold) {
+			if (note.scriptNote.type != NoteType.TAP && direction == NoteType.TAP) {
+				return;
+			}
+			if (note.scriptNote.interval(seconds) < passThreshold &&
+			    note.scriptNote.type == direction) {
 				note.result = ScoreNoteResult.PASS;
 			} else {
 				note.result = ScoreNoteResult.FAIL;
@@ -60,13 +65,14 @@ public class ScoreController : MonoBehaviour {
 			float interval = note.scriptNote.beatInSeconds() - seconds;
 			if (interval > registerThreshold) {
 				return null;
-			} else if (interval < -registerThreshold) {
+			} else if (interval < -passThreshold) {
 				note.result = ScoreNoteResult.FAIL;
+				Debug.Log(seconds + " " + note);
 			} else {
 				return note;
 			}
 		}
-		
+		//gameover? or reset.
 		return null;
 	}
 }

@@ -94,21 +94,19 @@ public class PlayerBehaviorScript : MonoBehaviour {
 	}
 
 	void swipeTypeLogic () {
+		GameController gc = GameObject.Find("GameController").GetComponent<GameController>();
 
 		//Runs when a swipe has ended
 		float xDifference = swipeEnd.x - swipeStart.x;
 		float yDifference = swipeEnd.y - swipeStart.y;
 
-		GUIText textGUI = GameObject.Find("SwipeDebug").guiText;
-		GUIText textGUI2 = GameObject.Find("SwipeDebug2").guiText;
-
 		if (Mathf.Abs(xDifference) >= swipeDirectionThreshold && !swipeXRegistered) {
 			//Difference > 0 = left swipe, Difference < 0 = right swipe
 			if (xDifference < 0) {
-				textGUI2.text = "Left Swipe! ";
+				gc.HandleInput(NoteType.LEFT);
 			}
 			else if (xDifference > 0) {
-				textGUI2.text = "Right Swipe!";
+				gc.HandleInput(NoteType.RIGHT);
 			}
 			swipeXRegistered = true;
 		}
@@ -116,10 +114,10 @@ public class PlayerBehaviorScript : MonoBehaviour {
 		if (Mathf.Abs(yDifference) >= swipeDirectionThreshold && !swipeYRegistered) {
 			//Difference > 0 = up swipe, Difference < 0 = down swipe
 			if (yDifference < 0) {
-				textGUI.text = "Down Swipe!";
+				gc.HandleInput(NoteType.DOWN);
 			}
 			else if (yDifference > 0) {
-				textGUI.text = "Up Swipe!";
+				gc.HandleInput(NoteType.UP);
 			}
 			swipeYRegistered = true;
 		}
@@ -127,8 +125,6 @@ public class PlayerBehaviorScript : MonoBehaviour {
 
 	void TapFunction() {
 		//Respond to tap event
-		//Note that "TapFunction" can be called anything you like.
-		//You could also omit TapFunction(), and just respond inside of Update(). But putting the response in a function is usually the way to go.
-		Debug.Log ("This object will be tapping LOLZ");
+		GameObject.Find("GameController").GetComponent<GameController>().HandleInput(NoteType.TAP);
 	}
 }
