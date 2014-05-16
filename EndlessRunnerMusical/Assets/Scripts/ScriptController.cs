@@ -90,7 +90,7 @@ public class ScriptController : MonoBehaviour {
 	}
 
 	List<float> GenerateScriptIntervals(float time) {
-		int different = Mathf.Clamp ((int)(time / noteIntervalScaling), 2, 4);
+		int different = Mathf.Clamp ((int)(time / noteIntervalScaling), 2, 5);
 		List<float> result = new List<float>();
 		switch (Random.Range(0, different)) {
 		case 0:
@@ -108,6 +108,11 @@ public class ScriptController : MonoBehaviour {
 			result.Add(1.5f);
 			result.Add(2);
 			break;
+		case 4:
+			result.Add(0);
+			result.Add(1);
+			result.Add(2);
+			result.Add(3);
 		}
 		return result;
 	}
