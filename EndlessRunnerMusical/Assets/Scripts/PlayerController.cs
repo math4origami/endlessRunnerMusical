@@ -9,9 +9,12 @@ public class PlayerController : MonoBehaviour {
 	public int CurrentNumLives {
 		get {return currentNumLives;}
 	}
+	public int score;
 	public GameObject heart1;
 	public GameObject heart2;
 	public GameObject heart3;
+	public GameObject scoreText;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +29,8 @@ public class PlayerController : MonoBehaviour {
 
 	public void resetPlayer() {
 		currentNumLives = originalNumLives;
+		score = 0;
+		updateScoreText ();
 
 		updateHearts();
 	}
@@ -52,6 +57,10 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	private void updateScoreText() {
+		scoreText.guiText.text = score.ToString();
+	}
+
 	public void deductLife() {
 		--currentNumLives;
 
@@ -60,6 +69,11 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		updateHearts();
+	}
+
+	public void updateScore(int delta) {
+		score += delta;
+		updateScoreText ();
 	}
 
 	public bool isAlive() {

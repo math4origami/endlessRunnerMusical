@@ -279,10 +279,10 @@ MonoBehaviour:
   buttonText: 
   objectName: WinLevelScreenController
   scriptFunction: startLevel
-  posX: 133
-  posY: 220
-  sizeX: 214
-  sizeY: 91
+  posX: 354
+  posY: 445
+  sizeX: 428
+  sizeY: 182
 --- !u!4 &946518607
 Transform:
   m_ObjectHideFlags: 0
@@ -452,10 +452,10 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: -40
+    x: 0
     y: 0
-    width: 568
-    height: 320
+    width: 1136
+    height: 640
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -524,19 +524,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posX
-      value: 133
+      value: 354
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posY
-      value: 220
+      value: 445
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: sizeX
-      value: 214
+      value: 428
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: sizeY
-      value: 91
+      value: 182
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: customSkin

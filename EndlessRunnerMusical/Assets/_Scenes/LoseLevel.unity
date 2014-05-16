@@ -222,10 +222,10 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: -40
+    x: 0
     y: 0
-    width: 568
-    height: 320
+    width: 1136
+    height: 640
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -433,11 +433,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.62399292
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.182698786
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -470,19 +470,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posX
-      value: 133
+      value: 354
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posY
-      value: 220
+      value: 445
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: sizeX
-      value: 214
+      value: 428
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: sizeY
-      value: 91
+      value: 182
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: buttonText
@@ -533,10 +533,10 @@ MonoBehaviour:
   buttonText: 
   objectName: LoseLevelScreenController
   scriptFunction: startLevel
-  posX: 133
-  posY: 220
-  sizeX: 214
-  sizeY: 91
+  posX: 354
+  posY: 445
+  sizeX: 428
+  sizeY: 182
 --- !u!4 &1737109246
 Transform:
   m_ObjectHideFlags: 0
@@ -544,7 +544,7 @@ Transform:
   m_PrefabInternal: {fileID: 1392025189}
   m_GameObject: {fileID: 1737109244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.62399292, y: -.182698786, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

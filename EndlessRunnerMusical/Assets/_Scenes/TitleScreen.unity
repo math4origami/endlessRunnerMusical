@@ -237,10 +237,10 @@ MonoBehaviour:
   buttonText: 
   objectName: TitleScreenController
   scriptFunction: startLevel
-  posX: 133
-  posY: 220
-  sizeX: 214
-  sizeY: 91
+  posX: 266
+  posY: 445
+  sizeX: 428
+  sizeY: 182
 --- !u!4 &1017475877
 Transform:
   m_ObjectHideFlags: 0
@@ -474,19 +474,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posX
-      value: 133
+      value: 266
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posY
-      value: 220
+      value: 445
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: sizeX
-      value: 214
+      value: 428
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: sizeY
-      value: 91
+      value: 182
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: customSkin
