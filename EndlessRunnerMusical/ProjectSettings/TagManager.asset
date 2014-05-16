@@ -37,11 +37,15 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
-  - name: Overlay
-    userID: 1
-    uniqueID: 2108324005
+  - name: Behind
+    userID: 2
+    uniqueID: 920869935
     locked: 0
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: Overlay
+    userID: 1
+    uniqueID: 2108324005
     locked: 0

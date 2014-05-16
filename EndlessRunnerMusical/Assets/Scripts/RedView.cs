@@ -12,6 +12,7 @@ public class RedView : MonoBehaviour {
 		Color c = GetComponent<SpriteRenderer>().material.color;
 		c.a = 0;
 		GetComponent<SpriteRenderer>().material.color = c;
+		GetComponent<SpriteRenderer>().sortingLayerName = "Overlay";
 	}
 	
 	// Update is called once per frame
