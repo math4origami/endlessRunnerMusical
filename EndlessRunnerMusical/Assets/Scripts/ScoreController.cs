@@ -27,6 +27,8 @@ public class ScoreController : MonoBehaviour {
 	public float registerThreshold;
 	public float passThreshold;
 
+	private int currentNote = 0;
+
 	public void initScoreWithScript(List<ScriptNote> scriptNotes) {
 		notes = new List<ScoreNote>();
 		foreach (ScriptNote scriptNote in scriptNotes) {
@@ -49,21 +51,22 @@ public class ScoreController : MonoBehaviour {
 	}
 
 	public ScoreNote getNote(float seconds) {
-		ScoreNote closest = null;
-		float closestInterval = registerThreshold;
-		
-		foreach (ScoreNote note in notes) {
+		for (; currentNote < notes.Count; currentNote++) {
+			ScoreNote note = notes[currentNote];
 			if (note.result != ScoreNoteResult.INCOMPLETE) {
 				continue;
 			}
 
-			float interval = note.scriptNote.interval(seconds);
-			if (interval < closestInterval) {
-				closestInterval = interval;
-				closest = note;
+			float interval = note.scriptNote.beatInSeconds() - seconds;
+			if (interval > registerThreshold) {
+				return null;
+			} else if (interval < -registerThreshold) {
+				note.result = ScoreNoteResult.FAIL;
+			} else {
+				return note;
 			}
 		}
 		
-		return closest;
+		return null;
 	}
 }
