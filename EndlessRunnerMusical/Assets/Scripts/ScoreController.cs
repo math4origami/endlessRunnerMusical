@@ -28,6 +28,12 @@ public class ScoreController : MonoBehaviour {
 	public float passThreshold;
 	public GameObject playerControllerObj;
 	public float scriptBuffer;
+	public GameObject audio1;
+	public GameObject audio2;
+	public GameObject audio3;
+	public GameObject audio4;
+	public GameObject audio5;
+	public GameObject audioFail;
 
 	private int currentNote = 0;
 	private float bufferedSeconds = 0;
@@ -59,9 +65,33 @@ public class ScoreController : MonoBehaviour {
 			if (note.scriptNote.interval(seconds) < passThreshold &&
 			    note.scriptNote.type == direction) {
 				note.result = ScoreNoteResult.PASS;
+
+				switch (direction) {
+					case NoteType.DOWN: {
+						audio1.GetComponent<AudioSource>().Play();
+						break;
+					}
+					case NoteType.UP: {
+						audio2.GetComponent<AudioSource>().Play();
+						break;
+					}
+					case NoteType.LEFT: {
+						audio3.GetComponent<AudioSource>().Play();
+						break;
+					}
+					case NoteType.RIGHT: {
+						audio4.GetComponent<AudioSource>().Play();
+						break;
+					}
+					case NoteType.TAP: {
+						audio5.GetComponent<AudioSource>().Play();
+						break;
+					}
+				}
 				pc.updateScore(5000);
 			} else {
 				note.result = ScoreNoteResult.FAIL;
+				audioFail.GetComponent<AudioSource>().Play();
 				pc.deductLife();
 			}
 //			Debug.Log(seconds + " " + note);
@@ -86,6 +116,7 @@ public class ScoreController : MonoBehaviour {
 				return null;
 			} else if (interval < -passThreshold) {
 				note.result = ScoreNoteResult.FAIL;
+				audioFail.GetComponent<AudioSource>().Play();
 
 				PlayerController pc = (PlayerController)playerControllerObj.GetComponent(typeof(PlayerController));
 				pc.deductLife();
