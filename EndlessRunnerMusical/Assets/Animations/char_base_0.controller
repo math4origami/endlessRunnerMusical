@@ -44,6 +44,42 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: swipeRightT
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: swipeLeftT
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: swipeUpT
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: swipeDownT
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: attackTapT
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: hurtT
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -68,7 +104,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: swipeUp
+    m_ConditionEvent: swipeUpT
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -104,7 +140,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: swipeRight
+    m_ConditionEvent: swipeRightT
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -140,7 +176,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: swipeDown
+    m_ConditionEvent: swipeRightT
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -194,7 +230,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: swipeRightT
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -212,7 +248,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: hurt
+    m_ConditionEvent: hurtT
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -230,7 +266,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: swipeLeft
+    m_ConditionEvent: swipeLeftT
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -266,7 +302,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: attackTap
+    m_ConditionEvent: attackTapT
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -397,33 +433,6 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110279077}
-      second:
-      - {fileID: 110125678}
-    data:
-      first: {fileID: 110269873}
-      second:
-      - {fileID: 110187781}
-    data:
-      first: {fileID: 110297408}
-      second:
-      - {fileID: 110113781}
-    data:
-      first: {fileID: 110226116}
-      second:
-      - {fileID: 110149010}
-    data:
-      first: {fileID: 110250971}
-      second:
-      - {fileID: 110148998}
-    data:
-      first: {fileID: 110274575}
-      second:
-      - {fileID: 110169564}
-    data:
-      first: {fileID: 110200000}
-      second: []
-    data:
       first: {fileID: 0}
       second:
       - {fileID: 110100000}
@@ -432,6 +441,33 @@ StateMachine:
       - {fileID: 110179758}
       - {fileID: 110125611}
       - {fileID: 110128943}
+    data:
+      first: {fileID: 110200000}
+      second: []
+    data:
+      first: {fileID: 110274575}
+      second:
+      - {fileID: 110169564}
+    data:
+      first: {fileID: 110250971}
+      second:
+      - {fileID: 110148998}
+    data:
+      first: {fileID: 110226116}
+      second:
+      - {fileID: 110149010}
+    data:
+      first: {fileID: 110297408}
+      second:
+      - {fileID: 110113781}
+    data:
+      first: {fileID: 110269873}
+      second:
+      - {fileID: 110187781}
+    data:
+      first: {fileID: 110279077}
+      second:
+      - {fileID: 110125678}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 132, y: -204, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
