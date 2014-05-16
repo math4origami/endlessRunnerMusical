@@ -10,7 +10,7 @@ public enum NoteType {
 }
 
 public class ScriptNote {
-	public int beat;
+	public float beat;
 	public NoteType type;
 	public ScriptNote(int beat_, NoteType type_) {
 		beat = beat_;
@@ -19,7 +19,7 @@ public class ScriptNote {
 
 	public float beatInSeconds() {
 		float bpm = GameObject.Find("Script").GetComponent<ScriptController>().bpm;
-		return (float) beat / bpm * ScriptController.SECONDS_PER_MINUTE;
+		return beat / bpm * ScriptController.SECONDS_PER_MINUTE;
 	}
 
 	public float interval(float seconds) {

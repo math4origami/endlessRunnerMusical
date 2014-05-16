@@ -4,14 +4,16 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 
 	public float startBuffer;
+	private float startTime;
 	private PlayerController playerController;
 
 	void Start () {
 		playerController = (PlayerController)GameObject.Find ("Player").GetComponent (typeof(PlayerController));
+		startTime = Time.time;
 	}
 
 	public float gameTime() {
-		return Time.time - startBuffer;
+		return Time.time - startBuffer - startTime;
 	}
 
 	// Update is called once per frame
