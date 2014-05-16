@@ -19,9 +19,7 @@ public class GUIButtonMake : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		GUI.skin = customSkin;
-
-		if (GUI.Button(new Rect(posX, posY, sizeX, sizeY), buttonText)) {
+		if (GUI.Button(new Rect(posX, posY, sizeX, sizeY), buttonText, customSkin.button)) {
 			if (actualObject) {
 				//Do something
 				actualObject.SendMessage(scriptFunction);
