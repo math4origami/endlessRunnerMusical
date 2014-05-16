@@ -258,11 +258,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  score: 0
   heart1: {fileID: 2021919589}
   heart2: {fileID: 1529657679}
   heart3: {fileID: 261702685}
   scoreText: {fileID: 847782408}
+  resultScoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
+  lastHighScoreText: {fileID: 0}
 --- !u!4 &485661824
 Transform:
   m_ObjectHideFlags: 0

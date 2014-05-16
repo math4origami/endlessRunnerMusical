@@ -24,7 +24,12 @@ public class GameController : MonoBehaviour {
 		GameObject.Find("Score").GetComponent<ScoreController>().getNote(gameTime());
 		GameObject.Find("SwipeDebug").guiText.text = gameTime().ToString();
 		if (!playerController.isAlive ()) {
-			loseLevel();
+			if (playerController.ResultScore > playerController.LastHighScore) {
+				winLevel();
+			}
+			else {
+				loseLevel();
+			}
 		}
 	}
 

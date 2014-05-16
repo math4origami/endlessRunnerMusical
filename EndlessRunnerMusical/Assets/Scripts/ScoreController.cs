@@ -55,13 +55,13 @@ public class ScoreController : MonoBehaviour {
 			if (note.scriptNote.type != NoteType.TAP && direction == NoteType.TAP) {
 				return;
 			}
+			PlayerController pc = (PlayerController)playerControllerObj.GetComponent(typeof(PlayerController));
 			if (note.scriptNote.interval(seconds) < passThreshold &&
 			    note.scriptNote.type == direction) {
 				note.result = ScoreNoteResult.PASS;
+				pc.updateScore(5000);
 			} else {
 				note.result = ScoreNoteResult.FAIL;
-
-				PlayerController pc = (PlayerController)playerControllerObj.GetComponent(typeof(PlayerController));
 				pc.deductLife();
 			}
 //			Debug.Log(seconds + " " + note);
