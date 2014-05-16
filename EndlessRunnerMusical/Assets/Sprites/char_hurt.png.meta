@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 6c9394892f7d84881851cc2d2ed76e18
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: char_hurt_0
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 3644
+        width: 445
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_hurt_1
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 3609
+        width: 282
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_hurt_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2920
+        width: 467
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_hurt_3
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 2891
+        width: 537
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_hurt_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2228
+        width: 607
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_hurt_5
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 2307
+        width: 364
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_hurt_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1718
+        width: 404
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_hurt_7
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1746
+        width: 449
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_hurt_8
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1113
+        width: 449
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_hurt_9
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1112
+        width: 445
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

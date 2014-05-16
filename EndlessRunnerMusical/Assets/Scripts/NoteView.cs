@@ -3,42 +3,25 @@ using System.Collections;
 
 public class NoteView : MonoBehaviour {
 
-	private ScoreNote scoreNote;
+	private ScoreNote scoreNote = null;
 
-//	public GameObject note1;
-//	public GameObject note2;
-//	public GameObject note3;
-//	public GameObject note4;
-//	public GameObject note5;
-
-//	public GameObject[] notes;
+	public GameObject left_idle;
+	public GameObject left_death;
+	public GameObject right_idle;
+	public GameObject right_death;
+	public GameObject up_idle;
+	public GameObject up_death;
+	public GameObject down_idle;
+	public GameObject down_death;
+	public GameObject tap_idle;
+	public GameObject tap_death;
 
 	public void initWithScoreNote(ScoreNote note) {
-
 		scoreNote = note;
-//		note1.SetActive(false);
-//		note2.SetActive(false);
-//		switch (note.scriptNote.type) {
-//		case NoteType.UP:
-//			note1.SetActive(true);
-//			break;
-//		default:
-//			note2.SetActive(true);
-//			break;
-//		}
-//		note3.SetActive(false);
-//		note4.SetActive(false);
-//		note5.SetActive(false);
-
-//		activeClip.getFramesCount() 
-//		activeClip.gotoAndPlay((uint)frame);
-
 	}
 
 	// Use this for initialization
 	void Start () {
-		float gameTime = GameObject.Find("GameController").GetComponent<GameController>().gameTime();
-//		GetComponentInChildren<Animator>().playbackTime = gameTime - Mathf.Floor(gameTime);
 		Update();
 	}
 
@@ -56,51 +39,63 @@ public class NoteView : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		setStart();
+		if (scoreNote == null) {
+			return;
+		}
 		move();
 		checkStatus();
 		checkDestroy();
 	}
 	
-//	bool firstDone = false;
-//	uint firstFrame;
-//	bool done = false;
-	void setStart() {
-//		if (!done) {
-//			try {
-//				float gameTime = GameObject.Find("GameController").GetComponent<GameController>().gameTime();
-//				float frames = (gameTime * (float)activeClip.settings.targetFPS);
-//				while (frames < 0) {
-//					frames += activeClip.getFramesCount();
-//				}
-//				uint frame = (uint) (frames % activeClip.getFramesCount());
-//				if (!firstDone) {
-//					firstDone = true;
-//					firstFrame = frame;
-//				} else if (frame == firstFrame + 1) {
-//					activeClip.gotoAndPlay(frame + 1);
-//					Debug.Log(frame);
-//					done = true;
-//				}
-//			} catch (System.Exception e) {
-//				
-//			}
-//		}
-	}
-
 	void move() {
 		float x = calcX();
 		float y = 0.0f;
 		if (scoreNote.result == ScoreNoteResult.FAIL) {
-//			y = -1.0f;
+			y = -1.0f;
 		} else if (scoreNote.result == ScoreNoteResult.PASS) {
-//			y = 1.0f;
+			y = 1.0f;
 		}
 		transform.position = new Vector3(x, y, 0.0f);
 	}
 
 	void checkStatus() {
+		GameObject idle;
+		GameObject death;
 
+		switch (scoreNote.scriptNote.type) {
+		case NoteType.LEFT:
+			idle = left_idle;
+			death = left_death;
+			break;
+		case NoteType.RIGHT:
+			idle = right_idle;
+			death = right_death;
+			break;
+		case NoteType.UP:
+			idle = up_idle;
+			death = up_death;
+			break;
+		case NoteType.DOWN:
+			idle = down_idle;
+			death = down_death;
+			break;
+		case NoteType.TAP:
+		default:
+			idle = tap_idle;
+			death = tap_death;
+			break;
+		}
+
+		if (scoreNote.result == ScoreNoteResult.INCOMPLETE) {
+			idle.SetActive(true);
+			death.SetActive(false);
+		} else if (scoreNote.result == ScoreNoteResult.PASS) {
+			idle.SetActive(false);
+			death.SetActive(true);
+		} else {
+			idle.SetActive(false);
+			death.SetActive(false);
+		}
 	}
 
 	void checkDestroy() {

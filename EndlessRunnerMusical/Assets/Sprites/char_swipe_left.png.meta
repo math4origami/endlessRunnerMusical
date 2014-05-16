@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 16e1f744b3f3f4d3ca70240b5f16eb6b
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: char_swipe_left_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3544
+        width: 504
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_swipe_left_1
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 3545
+        width: 662
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_swipe_left_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2851
+        width: 728
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_swipe_left_3
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 2825
+        width: 708
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_swipe_left_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2087
+        width: 744
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_swipe_left_5
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 2047
+        width: 754
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_swipe_left_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1477
+        width: 432
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_swipe_left_7
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1454
+        width: 421
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_swipe_left_8
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 757
+        width: 446
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: char_swipe_left_9
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 756
+        width: 504
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
