@@ -47,12 +47,14 @@ public class ScriptController : MonoBehaviour {
 		notes = new List<ScriptNote>();
 		notes.Add(new ScriptNote(8, NoteType.TAP));
 		notes.Add(new ScriptNote(12, NoteType.TAP));
-		for (int i=16; i<24; i+=2) {
-			notes.Add(new ScriptNote(i, NoteType.TAP));
-		}
-		for (int i=24; i<28; i++) {
-			notes.Add(new ScriptNote(i, NoteType.TAP));
-		}
+		notes.Add(new ScriptNote(16, NoteType.UP));
+		notes.Add(new ScriptNote(18, NoteType.DOWN));
+		notes.Add(new ScriptNote(20, NoteType.UP));
+		notes.Add(new ScriptNote(22, NoteType.DOWN));
+		notes.Add(new ScriptNote(24, NoteType.LEFT));
+		notes.Add(new ScriptNote(25, NoteType.RIGHT));
+		notes.Add(new ScriptNote(26, NoteType.LEFT));
+		notes.Add(new ScriptNote(27, NoteType.RIGHT));
 
 		GetComponent<AudioSource>().PlayDelayed(-GameObject.Find("GameController").GetComponent<GameController>().gameTime());
 	}
