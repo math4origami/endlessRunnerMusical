@@ -8,7 +8,7 @@ public class NoteController : MonoBehaviour {
 	public float unitsPerSecond;
 
 	public float spawnDistance() {
-		return GameObject.Find("MainCamera").GetComponent<Camera>().orthographicSize * 2;
+		return GameObject.Find("MainCamera").GetComponent<Camera>().orthographicSize * 4;
 	}
 
 	// Update is called once per frame

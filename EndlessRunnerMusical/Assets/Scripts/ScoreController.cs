@@ -56,6 +56,10 @@ public class ScoreController : MonoBehaviour {
 	}
 
 	public ScoreNote getNote(float seconds) {
+		return getNote(seconds, false);
+	}
+
+	public ScoreNote getNote(float seconds, bool ignoreThreshold) {
 		for (; currentNote < notes.Count; currentNote++) {
 			ScoreNote note = notes[currentNote];
 			if (note.result != ScoreNoteResult.INCOMPLETE) {
@@ -63,7 +67,7 @@ public class ScoreController : MonoBehaviour {
 			}
 
 			float interval = note.scriptNote.beatInSeconds() - seconds;
-			if (interval > registerThreshold) {
+			if (interval > registerThreshold && !ignoreThreshold) {
 				return null;
 			} else if (interval < -passThreshold) {
 				note.result = ScoreNoteResult.FAIL;
