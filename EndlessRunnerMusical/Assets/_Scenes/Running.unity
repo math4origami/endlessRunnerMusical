@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0e166f222e66402096e4a2d9880fd86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseScale: 1.5
+  baseScale: 2
   maxScale: 1
   baseAlpha: .200000003
   maxAlpha: .899999976
