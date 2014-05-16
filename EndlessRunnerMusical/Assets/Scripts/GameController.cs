@@ -4,8 +4,7 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 
 	public float startBuffer;
-
-	private float lastSwipe = -10.0f;
+	public float PIXELS_PER_SECOND;
 
 	void Start () {
 
