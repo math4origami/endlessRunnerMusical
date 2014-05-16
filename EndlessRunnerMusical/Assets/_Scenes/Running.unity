@@ -1620,16 +1620,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1dcf116f388417badd23286fe0534f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  registerThreshold: .100000001
-  passThreshold: .100000001
+  registerThreshold: .200000003
+  passThreshold: .200000003
   playerControllerObj: {fileID: 485661822}
   scriptBuffer: 10
-  audio1: {fileID: 0}
-  audio2: {fileID: 0}
-  audio3: {fileID: 0}
-  audio4: {fileID: 0}
-  audio5: {fileID: 0}
-  audioFail: {fileID: 0}
+  audio1: {fileID: 351314689}
+  audio2: {fileID: 1005029556}
+  audio3: {fileID: 1932324286}
+  audio4: {fileID: 1649779294}
+  audio5: {fileID: 1734541279}
+  audioFail: {fileID: 1921466519}
 --- !u!4 &1759128308
 Transform:
   m_ObjectHideFlags: 0
