@@ -279,10 +279,10 @@ MonoBehaviour:
   buttonText: 
   objectName: WinLevelScreenController
   scriptFunction: startLevel
-  posX: 133
-  posY: 220
-  sizeX: 214
-  sizeY: 91
+  posX: 354
+  posY: 445
+  sizeX: 428
+  sizeY: 182
 --- !u!4 &946518607
 Transform:
   m_ObjectHideFlags: 0
@@ -425,6 +425,52 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1848281160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1848281162}
+  - 131: {fileID: 1848281161}
+  m_Layer: 0
+  m_Name: VictoryUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1848281161
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848281160}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: b80fccbb742024c91a54de98af6a4066, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1136
+    height: 640
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1848281162
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848281160}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1001 &2144575150
 Prefab:
   m_ObjectHideFlags: 0
@@ -478,19 +524,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posX
-      value: 133
+      value: 354
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: posY
-      value: 220
+      value: 445
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: sizeX
-      value: 214
+      value: 428
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: sizeY
-      value: 91
+      value: 182
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d371b4a2618e94e1d8e68b735cf7712f, type: 2}
       propertyPath: customSkin
