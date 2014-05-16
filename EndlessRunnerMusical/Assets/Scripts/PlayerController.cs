@@ -9,11 +9,23 @@ public class PlayerController : MonoBehaviour {
 	public int CurrentNumLives {
 		get {return currentNumLives;}
 	}
-	public int score;
+	static public int score;
+	static public int resultScore;
+	public int ResultScore {
+		get { return resultScore;}
+	}
+	static public int highScore = 0;
+	static public int lastHighScore = 0;
+	public int LastHighScore {
+		get { return lastHighScore;}
+	}
 	public GameObject heart1;
 	public GameObject heart2;
 	public GameObject heart3;
 	public GameObject scoreText;
+	public GameObject resultScoreText;
+	public GameObject highScoreText;
+	public GameObject lastHighScoreText;
 	
 
 	// Use this for initialization
@@ -28,6 +40,11 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	public void resetPlayer() {
+		lastHighScore = highScore;
+		if (score > highScore) {
+			highScore = score;
+		}
+
 		currentNumLives = originalNumLives;
 		score = 0;
 		updateScoreText ();
@@ -36,6 +53,9 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void updateHearts() {
+		if (!heart1 && !heart2 && !heart3) {
+			return;
+		}
 		heart1.guiTexture.enabled = false;
 		heart2.guiTexture.enabled = false;
 		heart3.guiTexture.enabled = false;
@@ -58,7 +78,21 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void updateScoreText() {
-		scoreText.guiText.text = score.ToString();
+		if (scoreText) {
+			scoreText.guiText.text = score.ToString ();
+		}
+
+		if (highScoreText) {
+			highScoreText.guiText.text = highScore.ToString ();
+		}
+
+		if (resultScoreText) {
+			resultScoreText.guiText.text = resultScore.ToString ();
+		}
+
+		if (lastHighScoreText) {
+			lastHighScoreText.guiText.text = lastHighScore.ToString ();
+		}
 	}
 
 	public void deductLife() {
@@ -66,6 +100,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (currentNumLives <= 0) {
 			currentNumLives = 0;
+			resultScore = score;
 		}
 
 		updateHearts();
@@ -73,6 +108,7 @@ public class PlayerController : MonoBehaviour {
 	
 	public void updateScore(int delta) {
 		score += delta;
+
 		updateScoreText ();
 	}
 
