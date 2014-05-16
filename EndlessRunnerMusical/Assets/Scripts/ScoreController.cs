@@ -27,14 +27,25 @@ public class ScoreController : MonoBehaviour {
 	public float registerThreshold;
 	public float passThreshold;
 	public GameObject playerControllerObj;
+	public float scriptBuffer;
 
 	private int currentNote = 0;
+	private float bufferedSeconds = 0;
 
-	public void initScoreWithScript(List<ScriptNote> scriptNotes) {
+	void Start() {
 		notes = new List<ScoreNote>();
-		foreach (ScriptNote scriptNote in scriptNotes) {
-			notes.Add(new ScoreNote(scriptNote));
-			Debug.Log(notes[notes.Count-1]);
+	}
+
+	void Update() {
+		if (bufferedSeconds < GameObject.Find("GameController").GetComponent<GameController>().gameTime() + scriptBuffer) {
+			List<ScriptNote> bufferedNotes =  GameObject.Find("Script").GetComponent<ScriptController>().GetNotes(bufferedSeconds + 0.01f, bufferedSeconds + scriptBuffer);
+
+			foreach (ScriptNote note in bufferedNotes) {
+				notes.Add(new ScoreNote(note));
+				Debug.Log(notes[notes.Count-1] + "\n");
+			}
+
+			bufferedSeconds = notes[notes.Count-1].scriptNote.beatInSeconds();
 		}
 	}
 
@@ -53,9 +64,9 @@ public class ScoreController : MonoBehaviour {
 				PlayerController pc = (PlayerController)playerControllerObj.GetComponent(typeof(PlayerController));
 				pc.deductLife();
 			}
-			Debug.Log(seconds + " " + note);
+//			Debug.Log(seconds + " " + note);
 		} else {
-			Debug.Log(seconds + " - ");
+//			Debug.Log(seconds + " - ");
 		}
 	}
 
@@ -79,7 +90,7 @@ public class ScoreController : MonoBehaviour {
 				PlayerController pc = (PlayerController)playerControllerObj.GetComponent(typeof(PlayerController));
 				pc.deductLife();
 
-				Debug.Log(seconds + " " + note);
+//				Debug.Log(seconds + " " + note);
 			} else {
 				return note;
 			}

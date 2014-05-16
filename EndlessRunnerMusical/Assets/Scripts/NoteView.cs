@@ -49,13 +49,10 @@ public class NoteView : MonoBehaviour {
 	
 	void move() {
 		float x = calcX();
-		float y = 0.0f;
 		if (scoreNote.result == ScoreNoteResult.FAIL) {
-			y = -1.0f;
 		} else if (scoreNote.result == ScoreNoteResult.PASS) {
-			y = 1.0f;
 		}
-		transform.position = new Vector3(x, y, 0.0f);
+		transform.position = new Vector3(x, 0.0f, 0.0f);
 	}
 
 	void checkStatus() {

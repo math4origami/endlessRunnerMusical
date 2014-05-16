@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour {
 		updateHearts();
 	}
 
-	public bool isAlive() {
+	public bool isAlive() { return true;
 		return (currentNumLives > 0);
 	}
 }

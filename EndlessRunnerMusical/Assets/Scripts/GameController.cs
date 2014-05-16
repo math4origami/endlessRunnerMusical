@@ -7,9 +7,12 @@ public class GameController : MonoBehaviour {
 	private float startTime;
 	private PlayerController playerController;
 
+	void Awake() {
+		startTime = Time.time;
+	}
+
 	void Start () {
 		playerController = (PlayerController)GameObject.Find ("Player").GetComponent (typeof(PlayerController));
-		startTime = Time.time;
 	}
 
 	public float gameTime() {
