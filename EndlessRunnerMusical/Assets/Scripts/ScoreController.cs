@@ -26,6 +26,7 @@ public class ScoreController : MonoBehaviour {
 	public List<ScoreNote> notes;
 	public float registerThreshold;
 	public float passThreshold;
+	public GameObject playerControllerObj;
 
 	private int currentNote = 0;
 
@@ -48,6 +49,9 @@ public class ScoreController : MonoBehaviour {
 				note.result = ScoreNoteResult.PASS;
 			} else {
 				note.result = ScoreNoteResult.FAIL;
+
+				PlayerController pc = (PlayerController)playerControllerObj.GetComponent(typeof(PlayerController));
+				pc.deductLife();
 			}
 			Debug.Log(seconds + " " + note);
 		} else {
@@ -71,6 +75,10 @@ public class ScoreController : MonoBehaviour {
 				return null;
 			} else if (interval < -passThreshold) {
 				note.result = ScoreNoteResult.FAIL;
+
+				PlayerController pc = (PlayerController)playerControllerObj.GetComponent(typeof(PlayerController));
+				pc.deductLife();
+
 				Debug.Log(seconds + " " + note);
 			} else {
 				return note;

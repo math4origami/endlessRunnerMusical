@@ -9,3 +9,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/Running.unity
   - enabled: 1
     path: Assets/_Scenes/TitleScreen.unity
+  - enabled: 1
+    path: Assets/_Scenes/LoseLevel.unity
+  - enabled: 1
+    path: Assets/_Scenes/WinLevel.unity

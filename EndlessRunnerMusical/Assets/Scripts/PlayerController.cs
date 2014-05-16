@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void updateHearts() {
-		Debug.Log ("Who is you?");
 		heart1.guiTexture.enabled = false;
 		heart2.guiTexture.enabled = false;
 		heart3.guiTexture.enabled = false;
