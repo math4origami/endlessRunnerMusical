@@ -808,6 +808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bpm: 125
   noteTypeScaling: 10
+  noteIntervalScaling: 10
 --- !u!4 &1640748215
 Transform:
   m_ObjectHideFlags: 0

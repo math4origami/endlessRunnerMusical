@@ -41,6 +41,7 @@ public class ScriptController : MonoBehaviour {
 
 	public float bpm;
 	public float noteTypeScaling;
+	public float noteIntervalScaling;
 
 	void Start() {
 		notes = new List<ScriptNote>();
@@ -80,9 +81,33 @@ public class ScriptController : MonoBehaviour {
 			float lastBeat = notes[notes.Count-1].beat + 1;
 			float nextMeasure = Mathf.Ceil(lastBeat / beatsPerMeasure) * beatsPerMeasure;
 
-			notes.Add(GenerateScriptNote(nextMeasure));
-			notes.Add(GenerateScriptNote(nextMeasure+2));
+			foreach (int i in GenerateScriptIntervals(nextMeasure / bpm * ScriptController.SECONDS_PER_MINUTE)) {
+				notes.Add(GenerateScriptNote(nextMeasure + i));
+			}
 		}
+	}
+
+	List<float> GenerateScriptIntervals(float time) {
+		int different = Mathf.Clamp ((int)(time / noteIntervalScaling), 2, 4);
+		List<float> result = new List<float>();
+		switch (Random.Range(0, different)) {
+		case 0:
+			result.Add(4);
+			break;
+		case 1:
+			result.Add(0);
+			break;
+		case 2:
+			result.Add(0);
+			result.Add(2);
+			break;
+		case 3:
+			result.Add(0);
+			result.Add(1.5f);
+			result.Add(2);
+			break;
+		}
+		return result;
 	}
 
 	ScriptNote GenerateScriptNote(float beat) {
@@ -91,7 +116,6 @@ public class ScriptController : MonoBehaviour {
 
 	NoteType GenerateNoteType(float time) {
 		int different = Mathf.Clamp((int)(time / noteTypeScaling), 1, 5);
-		Debug.Log(time + " ---- " + different);
 		return (NoteType)(Random.Range(0, different));
 	}
 }
